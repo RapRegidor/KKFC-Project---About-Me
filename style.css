@@ -1,27 +1,5 @@
-#open{
-  float: left;
-
-  background-color: rgb(9, 104, 9);
-  color: white;
-  border: none;
-  border-radius: 3px;
-}
-
-#close{
-  background-color: rgb(9, 104, 9);
-  color: white;
-  border: none;
-  border-radius: 3px;
-}
-
-#sidebar{
-  width: 0px;
-  overflow-x: hidden; /*hides the button since "its overflowing from the sidebar". The current length of sidebar is 0px*/
-  position: fixed; /*fixed position. Won't move when user scrolls. fixed based on entire html element*/
-}
-
 header{
-  background-color: white;
+  background-color: lightsteelblue;
   height: 2%;
 
   color: black;
@@ -67,7 +45,7 @@ body{
 #pfp{
   width:90%;
   height:100%;
-  border: 5px solid rgba(240,230,140, 0.5);
+  border: 5px solid white;
   border-radius: 20px;
   float: right;
 }
@@ -75,7 +53,7 @@ body{
 #swim{
   width:90%;
   height:100%;
-  border: 5px solid rgba(140, 147, 240, 0.5);
+  border: 5px solid white;
   border-radius: 10px;
   float: left;
 }
@@ -123,8 +101,45 @@ li {
   padding: 0px 20px 0px 20px;
 }
 
+#open{
+  position: absolute;
+  left: 10px;
+  
 
+  background-color: rgb(9, 104, 9);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
 
+#close{
+  position: absolute; /*relative to its container*/
+  left: 160px;
+  top: 10px;
+
+  background-color: rgb(9, 104, 9);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+#sidebar{
+  width: 0px;
+  height: 100%;
+  transition: width 0.2s;/*"Animation with opening/closing the sidebar"*/
+
+  z-index: 1; /*This makes the sidebar always on top of the layer. This will hide the open sidebar button since the button is currently has an 'absolute position'*/
+  overflow-x: hidden; /*hides the button since "its overflowing from the sidebar". The current length of sidebar is 0px*/
+  position: fixed; /*fixed position. Won't move when user scrolls. fixed based on entire html element*/
+  background-color: white;
+}
+
+#name-sidebar{
+  background-color: lightgrey;
+  color: black;
+  font-family: serif;
+  padding: 10px;
+}
 
 
 

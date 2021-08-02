@@ -32,7 +32,7 @@ document.getElementById("dayOfTheWeek").innerHTML = "Welcome to my webpage! Curr
 document.getElementById("header").addEventListener("mouseover", function(){document.getElementById("header").style.backgroundColor ='lightblue';
 });
 
-document.getElementById("header").addEventListener("mouseout", function(){document.getElementById("header").style.backgroundColor ='white';
+document.getElementById("header").addEventListener("mouseout", function(){document.getElementById("header").style.backgroundColor ='lightsteelblue';
 });
 
 function highlightImg(){
