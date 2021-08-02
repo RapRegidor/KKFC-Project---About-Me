@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <div id="sidebar">
+      <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+      <input type="button" id="close" onclick="closeSidebar()" value="&#9932"">
+      <p>Put other pages/links here</p>
+    </div>
+
+    <div id="mainPanel">
+      <header id="header">
+        
+        <input type="button" id="open" onclick="openSidebar()" value="&#9776">
+        
+        <p id="dayOfTheWeek"></p>
+      </header>
+
+      <body>
+        <div class="container">
+          <!--<div class="row" id="pic">
+            <div class="col" id="background"  onmouseover="highlightImg()" onmouseout="undoHighlightImg()">
+              <img id="bg" src="https://www.destructoid.com/wp-content/uploads/2021/05/621192-actual-header.jpg" >
+              <h1 id="name">Rap Regidor</h1>
+            </div>
+          </div>-->
+          
+          <div class="row" id="content">
+            <div class="col" id="about">
+
+              <hr size="5" width="40%" color="red">  
+
+              <h3>About Me</h3>
+            
+              <p>First and foremost, I am a Filipino who moved here in the United States in 2014. I am currently a student who majors in Software Engineering in Brooklyn Technical High School of 2022. I plan to pursue careers involving in this major in college as well. Though I am a beginner, I am willing to learn more to expand and improve my skill set. Outside of school, you can probably see that I am almsot always watching shows whether it be anime or a television series, or reading mangas and light novels. Other than this, I am also a swimmer. I swim competitively ever since I was 8 years old. I won some and lost some. But overall, I had a lot of fun whether it be one or the other.</p>
+
+              <hr size="5" width="40%" color="red">  
+            </div>
+
+
+            <div class="col">
+              
+              <img id="pfp" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/90394169_10214871661978573_4429499187972800512_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=P9S0P-siqzcAX8Pm90F&_nc_ht=scontent-lga3-1.xx&oh=57802cc070611b5e93d89e3deff11ea3&oe=61252893">
+            
+            </div>
+          </div>
+
+          <div class="row" id="content">
+            
+            <div class="col">
+              
+              <img id="swim" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.18169-9/1779081_10201315277477433_1396798896_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=tGu3KM2UjUUAX_nMRAi&tn=-CcM_Vt6EHyiTltk&_nc_ht=scontent-lga3-1.xx&oh=775f093cbee0d402304b30634bcc0fc5&oe=6127186A">
+            
+            </div>
+
+            <div class="col" id="exp">
+
+              <hr size="5" width="40%" color="purple">  
+
+              <h3>Brief Experience as a Swimmer</h3>
+            
+              <p>As I mentioned in the 'About Me' section, I started swimming when I was 8 years old. It would be a lie if I said that I loved swimming the moment I started. I was "forced" to do so since my 2 oldest sisters became swimmers as well. Due to that, I was expected to follow suit. But of course, like most of other events, I came to appreciate what my parents did. I was able to meet new life-long friends, and experience the joy of traveling, playing, training, and competing with them. We participated multiple regional competitions and marathons and won numerous medals. And Although there were times I felt down due to the result, they were there for me to support me back up.</p>
+
+              <hr size="5" width="40%" color="purple">  
+            </div>
+          </div>
+        
+          <div class="row" id="socials">
+            <div class="col" id="links">
+              <ul>
+                <li><a href="https://www.facebook.com/rap.regidor" target="_blank"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" width= 50px height= 50px></a></li>
+
+                <li><a href="https://instagram.com/shinobu.supreme?utm_medium=copy_link" target="_blank"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width= 50px height= 50px></a></li>
+
+                <li><a href="https://myanimelist.net/profile/Yurenami" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png" width= 50px height= 50px></a></li>
+
+                <li><a href="https://steamcommunity.com/id/23722261/" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png" width= 50px height= 50px></a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </body>
+    </div>
+</html>
