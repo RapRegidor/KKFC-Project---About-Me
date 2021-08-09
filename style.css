@@ -1,12 +1,32 @@
 header{
-  background-color: lightsteelblue;
-  height: 2%;
+  background-color: white;
+  font-size: 20px;
+  text-align: center; 
+  padding: 20px 95px 5px 95px;
+  font-family: serif;
+}
 
+nav{
+  position: sticky;
+  top: 0px;
+  background-color: #B1F8F2;
+
+  border-bottom: 2px solid white;
   color: black;
+  font-size: 20px;
   text-align: center;
   font-family: serif;
-  padding: 10px;
+
+  height: 72.75px;
+
+  z-index: 1;
 }
+
+#logo{
+  position: relative;
+  top: 5px;
+}
+
 
 body{
   background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pdfeminine1-20b-nap.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=73757da8f1be7b0fd831d29d38599f5f");
@@ -28,7 +48,7 @@ body{
   font-family: Brush Script MT;
   color:white;
 
-  background-color: rgba(135, 207, 235, 0.7); 
+  background-color: #87cfebb3; 
 }
 
 #background{
@@ -70,81 +90,125 @@ body{
   max-width: 500px;
   text-align: justify;
   margin: 0 auto;
+  font-family: Raleway;
 }
 
-#about h3, #exp h3{
+#about h2, #exp h2{
   text-align: center;
-  font-family: serif;
+  font-family: STIX Two Text; 
+  font-weight: bold;
+  padding: 10px;
 }
 
 #about, #exp{
   padding: 10% 0;
 }
 
-
-
 #socials{
-  background: rgba(0, 0, 0, 0.5);
+  background: #b1f8f299;
   border-bottom-right-radius:10px;
   border-bottom-left-radius:10px;
-  height: 100px;
+  height: 20%;
 }
-ul {
-  text-align: center;
-  padding: 0px, auto;
+#mainPanel ul {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  text-align: center;
 }
 
-li {
+#mainPanel li {
   display: inline;
   padding: 0px 20px 0px 20px;
 }
 
 #open{
-  position: absolute;
+  position: absolute; /*making it absolute so it would be hidden when sidebar is open*/
   left: 10px;
+  top: 20px;
   
 
-  background-color: rgb(9, 104, 9);
+  background-color: #E68325;
   color: white;
   border: none;
   border-radius: 3px;
 }
 
 #close{
-  position: absolute; /*relative to its container*/
-  left: 160px;
-  top: 10px;
+  position: relative; 
+  left: 185px;
+  top: -70px;
 
-  background-color: rgb(9, 104, 9);
+  font-family: serif;
+  background-color: #E68325;
   color: white;
   border: none;
   border-radius: 3px;
+  font-size: 20px;
 }
 
 #sidebar{
   width: 0px;
   height: 100%;
-  transition: width 0.2s;/*"Animation with opening/closing the sidebar"*/
-
   z-index: 1; /*This makes the sidebar always on top of the layer. This will hide the open sidebar button since the button is currently has an 'absolute position'*/
   overflow-x: hidden; /*hides the button since "its overflowing from the sidebar". The current length of sidebar is 0px*/
   position: fixed; /*fixed position. Won't move when user scrolls. fixed based on entire html element*/
-  background-color: white;
+  background-color: #FDD9CC;
+  white-space: nowrap;
 }
 
 #name-sidebar{
-  background-color: lightgrey;
+  background-color: #9AC4F8;
   color: black;
   font-family: serif;
-  padding: 10px;
+  font-size: 30px;
+  padding: 13px;
+  cursor: default;
+  border-bottom: 2px solid white;
 }
 
 
+#sidebar ul {
+  position: absolute;
+  top: 80px;
+  left: -60px;
+  font-size: 20px;
+  font-family: serif;
+  list-style-type: none;
+}
 
+#sidebar li{
+  padding: 10px 40px 10px 40px;
+}
 
+#sidebar a:hover{
+  padding: 10px 40px 10px 0px;
+  color: lightblue;
+  
+}
 
+#sidebar a{
+  color:black;
+  text-decoration: none;
+}
+
+#wall{
+  height: 500px;
+}
+
+#background-travel{
+  width:100%;
+  height:500px;
+}
+
+#title-travel{
+  position: relative;
+  left: 50%;
+  top:-350px;
+  transform: translate(-50%, -50%);
+  font-size: 600%;
+  font-family: Brush Script MT;
+  color:rgb(141, 119, 221);
+}
 
 
 

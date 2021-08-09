@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <div id="sidebar">
+      <p id='name-sidebar'>Rap Regidor</p>
+      <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+      <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932"">
+
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+
+        <li><a href="travel.html">Travel</a></li>
+
+        <li><a href="interests.html">Interests</a></li>     
+
+        <li id='recommendationLink'><a href="recommendations.html">Recommendations</a></li>        
+      </ul>
+    </div>
+
+    <div id="mainPanel">
+      <nav id="nav">
+        
+        <input type="button" id="open" onclick="openSidebar()" value="Menu &#9776">
+        <img id="logo" src="Logo_Design.png" width="90">
+      </nav>
+
+      <body>
+        <div class="container-fluid">
+          <div class="row" id="wall">
+            <img src="https://wallpaperaccess.com/full/1318116.jpg" id="background-travel">
+            <h1 id="title-travel">My Travels</h1>
+          </div>
+          <script src="script.js"></script>
+        </div>
+      </body>
+    </div>
+</html>

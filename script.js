@@ -24,35 +24,41 @@ switch(day){
     break;
 }
 
-document.getElementById("dayOfTheWeek").innerHTML = "Welcome to my webpage! Currently, the day is " + day;
+
+if(window.location.href == 'https://kkfc-project.rapregidor.repl.co/index.html' || window.location.href=="https://kkfc-project.rapregidor.repl.co/"){
+  document.getElementById("dayOfTheWeek").innerHTML = "Welcome to my webpage! Currently, the day is " + day;
+}
 
 
 //I'll use this for highlighing buttons when hovered wth a little adjustments
 
-document.getElementById("header").addEventListener("mouseover", function(){document.getElementById("header").style.backgroundColor ='lightblue';
+document.getElementById("nav").addEventListener("mouseover", function(){document.getElementById("nav").style.backgroundColor ='#2EF1DA';
+document.getElementById("nav").style.transition = "all 0.5s";
 });
 
-document.getElementById("header").addEventListener("mouseout", function(){document.getElementById("header").style.backgroundColor ='lightsteelblue';
+document.getElementById("nav").addEventListener("mouseout", function(){document.getElementById("nav").style.backgroundColor ='#B1F8F2';
+document.getElementById("nav").style.transition = "all 0.5s";
 });
 
-function highlightImg(){
-  document.getElementById("background").style.backgroundColor ='lightblue';
-  document.getElementById("name").style.color ='red';
-}
+document.getElementById("wall").addEventListener("mouseover", function(){document.getElementById("background-travel").style.filter ='brightness(75%)';
+document.getElementById("background-travel").style.transition = "all 0.5s";
+});
 
-function undoHighlightImg(){
-  document.getElementById("background").style.backgroundColor ='whitesmoke';
-  document.getElementById("name").style.color ='white';
-}
+document.getElementById("wall").addEventListener("mouseout", function(){document.getElementById("background-travel").style.filter ='brightness(100%)';
+document.getElementById("background-travel").style.transition = "all 0.5s";
+});
 
 //sidebar
 
 function openSidebar(){
-  document.getElementById("sidebar").style.width = "200px";
-  document.getElementById("mainPanel").style.marginLeft = "200px";
+  document.getElementById("sidebar").style.width = "275px";
+  document.getElementById("mainPanel").style.marginLeft = "275px";
+  document.getElementById("sidebar").style.transition = "all 0.5s";
+  document.getElementById("mainPanel").style.transition = "all 0.5s";
+  /*"Animation with opening/closing the sidebar"*/
 }
 
 function closeSidebar(){
-  document.getElementById("sidebar").style.width = "0";
-  document.getElementById("mainPanel").style.marginLeft = "0";
+  document.getElementById("sidebar").style.width = "0px";
+  document.getElementById("mainPanel").style.marginLeft = "0px";
 }
