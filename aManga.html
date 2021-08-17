@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Miltonian Tattoo" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alfa+Slab+One" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda" />
+  </head>
+
+  <div id="sidebar">
+    <p id='name-sidebar'>Rap Regidor</p>
+    <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+    <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932">
+
+    <ul id="pages">
+      <li class="sidebar-link"><a href="index.html">About Me</a></li>
+
+      <li class="sidebar-link"><a href="aTravel.html">Travels</a></li>
+
+      <li class="sidebar-link"><a href="aRecom.html">Media Recommendation</a></li>     
+      <li class="sidebar-link"><a href="aCont.html">Contact Me</a></li>          
+    </ul>
+  </div>
+
+  <div id="mainPanel">
+
+    <header>
+      <img id="logo" src="images/Logo_Design.png" width="192">
+    </header>
+
+    <a id="top"></a>
+    <nav>
+
+      <input type="button" id="open" onclick="openSidebar()" value="&#9776 Menu">
+
+      <ul id="lined-nav">
+        <li class="li-nav"><a href="index.html">About Me</a></li>
+        <li class="li-nav"><a href="aTravel.html">Travels</a></li>
+        <li class="li-nav"><a href="aRecom.html">Media Recommendations</a></li>
+        <li class="li-nav"><a href="aCont.html">Contact Me</a></li>
+      </ul>
+
+      <p id="dayOfTheWeek"></p>
+
+    </nav>
+
+    <div id="bar">
+
+      <ul id="genres">
+          <li class="drop"><a href="#">Genres &#9662;</a>
+            <ul>
+              <li><a href="#action">Action</a></li>
+              <li><a href="#rom">Romance</a></li>
+              <li><a href="#comedy">Comedy</a></li>
+            </ul>
+          </li>         
+      </ul>
+
+      <ul id="other">
+        <li><a href="aGame.html">Games</a></li>
+        <li><a href="anime.html">Anime</a></li>
+      </ul>
+    </div>
+
+    <body>
+
+      <div id="manReco">
+        <h1>Manga Rec</h1>
+      </div>
+
+      <a id="action"></a>
+      <div class="recs">
+        <h1 class="gen">Action</h1> 
+        <a href="#top">Back to top</a>  
+        <div class = "media-image" id="manAct1" onclick="location.href='https://myanimelist.net/manga/70259/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu?q=mushoku&cat=manga'">
+          <h1 class="media-title">Mushoku Tensei<h1>
+        </div>
+
+        <div class = "media-image" id="manAct2" onclick="location.href='https://myanimelist.net/manga/16765/Kingdom'">
+          <h1 class="media-title">Kingdom<h1>
+        </div>
+
+        <div class = "media-image" id="manAct3" onclick="location.href='https://myanimelist.net/manga/110485/Shuumatsu_no_Walk%C3%BCre?q=record%20of%20ra&cat=manga'">
+          <h1 class="media-title">Record of Ragnarok<h1>
+        </div>
+
+      </div>
+
+      <a id="rom"></a>
+      <div class="recs">
+        <h1 class="gen">Romance</h1>
+        <a href="#top">Back to top</a>    
+
+        <div class = "media-image" id="manRom1" onclick="location.href='https://myanimelist.net/manga/99007/Komi-san_wa_Comyushou_desu?q=komi&cat=manga'">
+          <h1 class="media-title">Komi-san<h1>
+        </div>
+
+        <div class = "media-image" id="manRom2" onclick="location.href='https://myanimelist.net/manga/76083/Ojojojo?q=ojojo&cat=manga'">
+          <h1 class="media-title">Ojojojo<h1>
+        </div>
+
+        <div class = "media-image" id="manRom3" onclick="location.href='https://myanimelist.net/manga/105430/Senryuu_Shoujo?q=senryuu&cat=manga'">
+          <h1 class="media-title">Senryuu Shoujo<h1>
+        </div> 
+      </div>
+
+      <a id="comedy"></a>
+      <div class="recs">
+        <h1 class="gen">Comedy</h1>
+        <a href="#top">Back to top</a>   
+
+        <div class = "media-image" id="manCom1" onclick="location.href='https://myanimelist.net/manga/119022/Kage_no_Jitsuryokusha_ni_Naritakute?q=eminen&cat=manga'">
+          <h1 class="media-title">The Eminence in Shadow<h1>
+        </div>
+
+        <div class = "media-image" id="manCom2" onclick="location.href='https://myanimelist.net/manga/119161/Spy_x_Family?q=spy&cat=manga'">
+          <h1 class="media-title">Spy x Family<h1>
+        </div>
+
+        <div class = "media-image" id="manCom3" onclick="location.href='https://myanimelist.net/manga/112922/Gokushufudou?q=gokushu&cat=manga'">
+          <h1 class="media-title">Gokushufudou<h1>
+        </div>  
+      </div>
+      
+    </body>
+  </div>
+  <script src="script.js"></script>
+</html>

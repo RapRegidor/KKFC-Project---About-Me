@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Miltonian Tattoo" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alfa+Slab+One" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda" />
+  </head>
+
+  <div id="sidebar">
+    <p id='name-sidebar'>Rap Regidor</p>
+    <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+    <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932">
+
+    <ul id="pages">
+      <li class="sidebar-link"><a href="index.html">About Me</a></li>
+
+      <li class="sidebar-link"><a href="aTravel.html">Travels</a></li>
+
+      <li class="sidebar-link"><a href="aRecom.html">Media Recommendation</a></li>     
+      <li class="sidebar-link"><a href="aCont.html">Contact Me</a></li>          
+    </ul>
+  </div>
+
+  <div id="mainPanel">
+
+    <header>
+      <img id="logo" src="images/Logo_Design.png" width="192">
+    </header>
+
+    <a id="top"></a>
+    <nav>
+
+      <input type="button" id="open" onclick="openSidebar()" value="&#9776 Menu">
+
+      <ul id="lined-nav">
+        <li class="li-nav"><a href="index.html">About Me</a></li>
+        <li class="li-nav"><a href="aTravel.html">Travels</a></li>
+        <li class="li-nav"><a href="aRecom.html">Media Recommendations</a></li>
+        <li class="li-nav"><a href="aCont.html">Contact Me</a></li>
+      </ul>
+
+      <p id="dayOfTheWeek"></p>
+
+    </nav>
+
+    <div id="bar">
+
+      <ul id="genres">
+          <li class="drop"><a href="#">Genres &#9662;</a>
+            <ul>
+              <li><a href="#action">Action</a></li>
+              <li><a href="#sol">Slice of life</a></li>
+              <li><a href="#rom">Romance</a></li>
+              <li><a href="#supernat">Supernatural</a></li>
+              <li><a href="#comedy">Comedy</a></li>
+            </ul>
+          </li>         
+      </ul>
+
+      <ul id="other">
+        <li><a href="aGame.html">Games</a></li>
+        <li><a href="aManga.html">Manga</a></li>
+      </ul>
+    </div>
+
+    <body>
+
+      <div id="aniReco">
+        <h1>Anime Rec</h1>
+      </div>
+
+      <a id="action"></a>
+      <div class="recs">
+        <h1 class="gen">Action</h1> 
+        <a href="#top">Back to top</a>  
+        <div class = "media-image" id="aniAct1" onclick="location.href='https://myanimelist.net/anime/22297/Fate_stay_night__Unlimited_Blade_Works'">
+          <h1 class="media-title">Fate Series<h1>
+        </div>
+
+        <div class = "media-image" id="aniAct2" onclick="location.href='https://myanimelist.net/anime/40052/Great_Pretender'">
+          <h1 class="media-title">Great Pretender<h1>
+        </div>
+
+        <div class = "media-image" id="aniAct3" onclick="location.href='https://myanimelist.net/anime/486/Kino_no_Tabi__The_Beautiful_World'">
+          <h1 class="media-title">Kino no Tabi<h1>
+        </div>
+      </div>
+
+      <a id="sol"></a>
+      <div class="recs">
+        <h1 class="gen">Slice of Life</h1>  
+        <a href="#top">Back to top</a>   
+
+        <div class = "media-image" id="aniSol1" onclick="location.href='https://myanimelist.net/anime/33352/Violet_Evergarden'">
+          <h1 class="media-title">Violet Evergarden<h1>
+        </div>
+
+        <div class = "media-image" id="aniSol2" onclick="location.href='https://myanimelist.net/anime/32093/Tanaka-kun_wa_Itsumo_Kedaruge'">
+          <h1 class="media-title">Tanaka-kun wa Itsumo Kedaruge<h1>
+        </div>
+
+        <div class = "media-image" id="aniSol3" onclick="location.href='https://myanimelist.net/anime/13759/Sakura-sou_no_Pet_na_Kanojo'">
+          <h1 class="media-title">Sakura-sou no Pet na Kanojo<h1>
+        </div>
+      </div>
+
+      <a id="rom"></a>
+      <div class="recs">
+        <h1 class="gen">Romance</h1>
+        <a href="#top">Back to top</a>    
+
+        <div class = "media-image" id="aniRom1" onclick="location.href='https://myanimelist.net/anime/21647/Tamako_Love_Story'">
+          <h1 class="media-title">Tamako Love Story<h1>
+        </div>
+
+        <div class = "media-image" id="aniRom2" onclick="location.href='https://myanimelist.net/anime/38680/Fruits_Basket_1st_Season'">
+          <h1 class="media-title">Fruits Basket<h1>
+        </div>
+
+        <div class = "media-image" id="aniRom3" onclick="location.href='https://myanimelist.net/anime/6045/Kimi_ni_Todoke'">
+          <h1 class="media-title">Kimi ni Todoke<h1>
+        </div> 
+      </div>
+
+      <a id="supernat"></a>
+      <div class="recs">
+        <h1 class="gen">Supernatural</h1>
+        <a href="#top">Back to top</a>     
+
+        <div class = "media-image" id="aniSuper1" onclick="location.href='https://myanimelist.net/anime/5081/Bakemonogatari'">
+          <h1 class="media-title">Monogatari<h1>
+        </div>
+
+        <div class = "media-image" id="aniSuper2" onclick="location.href='https://myanimelist.net/anime/457/Mushishi'">
+          <h1 class="media-title">Mushishi<h1>
+        </div>
+
+        <div class = "media-image" id="aniSuper3" onclick="location.href='https://myanimelist.net/anime/6746/Durarara'">
+          <h1 class="media-title">Durarara!!<h1>
+        </div>
+      </div>
+
+      <a id="comedy"></a>
+      <div class="recs">
+        <h1 class="gen">Comedy</h1>
+        <a href="#top">Back to top</a>   
+
+        <div class = "media-image" id="aniCom1" onclick="location.href='https://myanimelist.net/anime/918/Gintama?q=gintama&cat=anime'">
+          <h1 class="media-title">Gintama<h1>
+        </div>
+
+        <div class = "media-image" id="aniCom2" onclick="location.href='https://myanimelist.net/anime/37105/Grand_Blue?q=grand%20blue&cat=anime'">
+          <h1 class="media-title">Grand Blue<h1>
+        </div>
+
+        <div class = "media-image" id="aniCom3" onclick="location.href='https://myanimelist.net/anime/33255/Saiki_Kusuo_no_%CE%A8-nan?q=saiki&cat=anime'">
+          <h1 class="media-title">Saiki Kusuo no Ψ-nan<h1>
+        </div>  
+      </div>
+      
+    </body>
+  </div>
+  <script src="script.js"></script>
+</html>

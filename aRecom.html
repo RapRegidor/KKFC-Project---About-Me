@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Miltonian Tattoo" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+  </head>
+
+  <div id="sidebar">
+    <p id='name-sidebar'>Rap Regidor</p>
+    <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+    <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932">
+
+    <ul id="pages">
+      <li class="sidebar-link"><a href="index.html">About Me</a></li>
+
+      <li class="sidebar-link"><a href="aTravel.html">Travels</a></li>
+
+      <li class="sidebar-link"><a href="aRecom.html">Media Recommendation</a></li>     
+      <li class="sidebar-link"><a href="aCont.html">Contact Me</a></li>          
+    </ul>
+  </div>
+
+  <div id="mainPanel">
+
+    <header>
+      <img id="logo" src="images/Logo_Design.png" width="192">
+    </header>
+
+    <nav>
+
+      <input type="button" id="open" onclick="openSidebar()" value="&#9776 Menu">
+
+      <ul id="lined-nav">
+        <li class="li-nav"><a href="index.html">About Me</a></li>
+        <li class="li-nav"><a href="aTravel.html">Travels</a></li>
+        <li class="li-nav"><a href="aRecom.html">Media Recommendations</a></li>
+        <li class="li-nav"><a href="aCont.html">Contact Me</a></li>
+      </ul>
+
+      <p id="dayOfTheWeek"></p>
+
+    </nav>
+
+    <body>
+      <div class="container-fluid">
+          <div class="row" id="medias">
+            <div class="col" id="game" onclick="location.href='aGame.html'">
+              <h1>GAMES</h1>
+            </div>
+            <div class="col" id="anime" onclick="location.href='anime.html'">
+              <h1>ANIME</h1>
+            </div>
+            <div class="col" id="manga" onclick="location.href='aManga.html'">
+              <h1>MANGA</h1>
+            </div>  
+          </div>  
+        </div>
+    </body>
+  </div>
+  <script src="script.js"></script>
+</html>

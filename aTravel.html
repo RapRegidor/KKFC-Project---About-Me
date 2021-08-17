@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Miltonian Tattoo" />
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+  </head>
+
+  <div id="sidebar">
+    <p id='name-sidebar'>Rap Regidor</p>
+    <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+    <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932">
+
+    <ul id="pages">
+      <li class="sidebar-link"><a href="index.html">About Me</a></li>
+
+      <li class="sidebar-link"><a href="aTravel.html">Travels</a></li>
+
+      <li class="sidebar-link"><a href="aRecom.html">Media Recommendation</a></li>     
+      <li class="sidebar-link"><a href="aCont.html">Contact Me</a></li>          
+    </ul>
+  </div>
+
+  <div id="mainPanel">
+
+    <header>
+      <img id="logo" src="images/Logo_Design.png" width="192">
+    </header>
+
+    <nav>
+
+      <input type="button" id="open" onclick="openSidebar()" value="&#9776 Menu">
+
+      <ul id="lined-nav">
+        <li class="li-nav"><a href="index.html">About Me</a></li>
+        <li class="li-nav"><a href="aTravel.html">Travels</a></li>
+        <li class="li-nav"><a href="aRecom.html">Media Recommendations</a></li>
+        <li class="li-nav"><a href="aCont.html">Contact Me</a></li>
+      </ul>
+
+      <p id="dayOfTheWeek"></p>
+
+    </nav>
+
+    <body>
+      <div class="container-fluid" id="slideshow">
+        <div class="row">
+          <div class="col" id="slide-images-1">
+            <div style="text-align:center">
+              <span id="one" class="dot" onclick="currentSlide(1)"></span>
+              <span id="two" class="dot" onclick="currentSlide(2)"></span>
+              <span id="three" class="dot" onclick="currentSlide(3)"></span>
+              <span id="four" class="dot" onclick="currentSlide(4)"></span>
+              <span id="five" class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <div id="first">
+              <h1>First Ever Hike</h1>
+              <p>
+                If I remember correctly, I was around 8 years old when I went to a camping trip to Mount Apo (in Philippines) with my family and friends. It was a week long hiking. I was very excited to come along that I went running and went along to another group that was going to another way. Thankfully, my family noticed it and brought me back.  If I am going to be honest, I didn’t really hike the day after the first day. Unexpectedly, I got a fever which made me unable to progress through. Our guide was kind enough to carry me all day along for the next few days. It was quite embarassing and saddening since I didn’t fully experience hiking the mountain.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col" id="slide-images-2">
+            <div style="text-align:center">
+              <span id="one1" class="dot" onclick="currentSlide1(1)"></span>
+              <span id="two1" class="dot" onclick="currentSlide1(2)"></span>
+              <span id="three1" class="dot" onclick="currentSlide1(3)"></span>
+            </div>
+            <div id="second">
+              <h1>Mt. Greylock</h1>
+              <p>
+                This was my first snowy-mountain hike. It was extremely difficult traversing through the snowy path. I didn't have any snowshoes so the snow went up all the way to my knees. Worse yet, it was extremely cold. My hands were completely numb even though I had gloves with me. And when we reached our campsite, we couldn't even set a proper fire since most of the wood were wet. When we reached the peak, it was beautiful. I can't describe the scenery in words. Though it was difficult, I am glad that I joined in the trip.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col" id="slide-images-3">
+            <div style="text-align:center">
+              <span id="one2" class="dot" onclick="currentSlide2(1)"></span>
+              <span id="two2" class="dot" onclick="currentSlide2(2)"></span>
+              <span id="three2" class="dot" onclick="currentSlide2(3)"></span>
+            </div>
+            <div id="third">
+              <h1>The Unluckiest Trip</h1>
+              <p>
+                Let me list the number of things that went wrong. First, we (father, sister and I) were late so we couldn't go with our group. And so we had to hike through the night. Second, it was very dark so it was hard to know which way was the right way. And you can guess what happened. We got lost. Thankfully, the path that we hiked, took us back to the starting position. But it was already very late, we didn't want to hike again. Third, There was no signal so we couldn't contact anyone to pick us up. This meant that we had to walk all the way to a different campsite where my mother and other friends stayed at. But it was quite far. Our legs started to hurt and we were contemplating whether to camp next to the road or not. However, my mother's instinct came into play. She was able to deduce that we weren't in the base camp (there is signal there) and was able to pick us up.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </body>
+  </div>
+  <script src="script.js"></script>
+</html>

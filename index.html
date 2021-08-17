@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>repl.it</title>
 
@@ -9,41 +9,53 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
       <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
 
-    <div id="sidebar">
-      <p id='name-sidebar'>Rap Regidor</p>
-      <!--UTF-8 Miscellaneous Symbols (Dec value)-->
-      <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Miltonian Tattoo" />
 
-      <ul>
-        <li id='aboutLink'><a href="index.html">About Me</a></li>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nosifer+Caps" />
+  </head>
 
-        <li id='travelLink'><a href="travel.html">Travel</a></li>
+  <div id="sidebar">
+    <p id='name-sidebar'>Rap Regidor</p>
+    <!--UTF-8 Miscellaneous Symbols (Dec value)-->
+    <input type="button" id="close" onclick="closeSidebar()" value="Close &#9932">
 
-        <li id='interestsLink'><a href="interests.html">Interests</a></li>     
+    <ul id="pages">
+      <li class="sidebar-link"><a href="index.html">About Me</a></li>
 
-        <li id='recommendationLink'><a href="recommendations.html">Recommendations</a></li>          
+      <li class="sidebar-link"><a href="aTravel.html">Travels</a></li>
+
+      <li class="sidebar-link"><a href="aRecom.html">Media Recommendation</a></li>     
+      <li class="sidebar-link"><a href="aCont.html">Contact Me</a></li>          
+    </ul>
+  </div>
+
+  <div id="mainPanel">
+
+    <header>
+      <img id="logo" src="images/Logo_Design.png" width="192">
+    </header>
+
+    <nav>
+
+      <input type="button" id="open" onclick="openSidebar()" value="&#9776 Menu">
+
+      <ul id="lined-nav">
+        <li class="li-nav"><a href="index.html">About Me</a></li>
+        <li class="li-nav"><a href="aTravel.html">Travels</a></li>
+        <li class="li-nav"><a href="aRecom.html">Media Recommendations</a></li>
+        <li class="li-nav"><a href="aCont.html">Contact Me</a></li>
       </ul>
-    </div>
 
-    <div id="mainPanel">
-      <header>
-        <p id="dayOfTheWeek"></p>
-      </header>
+      <p id="dayOfTheWeek"></p>
 
-      <nav id="nav">
-        
-        <input type="button" id="open" onclick="openSidebar()" value="Menu &#9776">
-        
-        <img id="logo" src="Logo_Design.png" width="90">
-      </nav>
+    </nav>
 
-      <body>
-        <div class="container-fluid">
-          
-          <div class="row" id="content">
-            <div class="col" id="about">
+    <body>
+      <div class="container-fluid" id="abt">
+          <div class="row">
+            <div class="col" id="aboutTxt">
 
               <hr size="5" width="40%" color="purple">  
 
@@ -54,50 +66,53 @@
               <hr size="5" width="40%" color="purple">  
             </div>
 
-
-            <div class="col">
+            <div class="col" id="pic">
               
-              <img id="pfp" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/90394169_10214871661978573_4429499187972800512_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=P9S0P-siqzcAX8Pm90F&_nc_ht=scontent-lga3-1.xx&oh=57802cc070611b5e93d89e3deff11ea3&oe=61252893">
+              <img id="pfp" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/90394169_10214871661978573_4429499187972800512_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=4QOK167pbAMAX_jCxBd&_nc_ht=scontent-lga3-1.xx&oh=f2ef882e761ec3df1a65b644d84cbc60&oe=6140D813">
             
             </div>
           </div>
 
-          <div class="row" id="content">
+          <div class="row">
+            <div class="col" id="swimTxt">
+
+              <hr size="5" width="40%" color="white">  
+
+              <h2>Experience as a Swimmer</h2>
             
-            <div class="col">
-              
-              <img id="swim" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.18169-9/1779081_10201315277477433_1396798896_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=tGu3KM2UjUUAX_nMRAi&tn=-CcM_Vt6EHyiTltk&_nc_ht=scontent-lga3-1.xx&oh=775f093cbee0d402304b30634bcc0fc5&oe=6127186A">
-            
-            </div>
+              <p>As I mentioned, I started swimming when I was 8 years old. It would be a lie if I said that I loved swimming the moment I started. I was "forced" to do so since my 2 oldest sisters became swimmers as well. Due to that, I was expected to follow suit. There were times that I was struggling and really desired to quit. But of course, now, I came to appreciate what my parents did. I was able to meet new life-long friends, and experience the joy of traveling, playing, training, and competing with them. We participated multiple regional competitions and marathons and won numerous medals. And Although there were times I felt down due to the result, they were there for me to support me back up.</p>
 
-            <div class="col" id="exp">
-
-              <hr size="5" width="40%" color="purple">  
-
-              <h2>Brief Experience as a Swimmer</h2>
-            
-              <p>As I mentioned in the 'About Me' section, I started swimming when I was 8 years old. It would be a lie if I said that I loved swimming the moment I started. I was "forced" to do so since my 2 oldest sisters became swimmers as well. Due to that, I was expected to follow suit. But of course, like most of other events, I came to appreciate what my parents did. I was able to meet new life-long friends, and experience the joy of traveling, playing, training, and competing with them. We participated multiple regional competitions and marathons and won numerous medals. And Although there were times I felt down due to the result, they were there for me to support me back up.</p>
-
-              <hr size="5" width="40%" color="purple">  
+              <hr size="5" width="40%" color="white">  
             </div>
           </div>
-        
-          <div class="row" id="socials">
-            <div class="col" id="links">
-              <ul>
-                <li><a href="https://www.facebook.com/rap.regidor" target="_blank"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" width= 50px height= 50px></a></li>
 
-                <li><a href="https://instagram.com/shinobu.supreme?utm_medium=copy_link" target="_blank"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width= 50px height= 50px></a></li>
+          <div class="row">
+            <div class="col" id="interests">
+              
+              <hr size="5" width="40%" color="white">  
 
-                <li><a href="https://myanimelist.net/profile/Yurenami" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png" width= 50px height= 50px></a></li>
+              <h2>Interests</h2>
+            
+              <p>As you may have already guessed (and read), my interests includes reading mangas and novels, and watching anime or other shows. I was introduced in this world of entertainment by my oldest sister. Through this shared interests, we were able to get closer to each other, talking and recommending shows. In addition to this, I was able to gain friends through this common interests. Most of the friends I built up still exist today. They also still discuss about it. I am probably never going to lose interest anytime sooner. These mediums fascinates me since it almost always delivers a message implicitly or explicitly. I try to analyze it myself and if I fail to do so, there is a huge community that discusses about these topics. Most of the time these people bring up details that I never even thought of so it is quite amazing. Of course, some shows are jsut for pure relaxation or entertainment, I do not always look for deep messages.</p>
 
-                <li><a href="https://steamcommunity.com/id/23722261/" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png" width= 50px height= 50px></a></li>
-                
-              </ul>
+              <hr size="5" width="40%" color="white">  
+          
             </div>
           </div>
         </div>
-        <script src="script.js"></script>
-      </body>
-    </div>
+
+        <hr size="5" width="40%" color="purple">  
+        <ul id="socials">
+          <li><a href="https://www.facebook.com/rap.regidor" target="_blank"><img src="images/fb_logo.png" width= 40px height= 40px></a></li>
+
+          <li><a href="https://instagram.com/shinobu.supreme?utm_medium=copy_link" target="_blank"><img src="images/ig_logo.png" width= 40px height= 40px></a></li>
+
+          <li><a href="https://myanimelist.net/profile/Yurenami" target="_blank"><img src="images/mal_logo.png" width= 40px height= 40px></a></li>
+
+          <li><a href="https://steamcommunity.com/id/23722261/" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png" width= 40px height= 40px></a></li>
+        </ul>
+
+    </body>
+  </div>
+  <script src="script.js"></script>
 </html>

@@ -1,155 +1,106 @@
 header{
-  background-color: white;
-  font-size: 20px;
-  text-align: center; 
-  padding: 20px 95px 5px 95px;
-  font-family: serif;
+  text-align: center;
+  padding: 10px 0px 10px 0px; 
+  background-image: linear-gradient(white, #6243DE);
+  margin-top: 0px;
 }
 
 nav{
   position: sticky;
   top: 0px;
-  background-color: #B1F8F2;
-
-  border-bottom: 2px solid white;
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  font-family: serif;
-
-  height: 72.75px;
+  background-color:  #6243DE;
+  height: 60px;
+  border-bottom: 2px solid gray;
 
   z-index: 1;
+
+  text-align: center;
 }
 
-#logo{
+#lined-nav{
+  list-style-type: none;
+  visibility: visible;
+}
+
+.li-nav{
   position: relative;
-  top: 5px;
-}
-
-
-body{
-  background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pdfeminine1-20b-nap.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=73757da8f1be7b0fd831d29d38599f5f");
-  background-size: cover;
-  background-position: center;
-}
-
-#bg{
-  width: 100%;
-  height: 100%;
-  border-radius:10px;
-}
-
-#name{
-  position: relative;
-  top: -100px;
-  text-align: center;
-  font-size: 400%;
-  font-family: Brush Script MT;
-  color:white;
-
-  background-color: #87cfebb3; 
-}
-
-#background{
-  border-radius:10px;
-  height: 400px;
-  background-color: whitesmoke;
-}
-
-.container{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#pfp{
-  width:90%;
-  height:100%;
-  border: 5px solid white;
-  border-radius: 20px;
-  float: right;
-}
-
-#swim{
-  width:90%;
-  height:100%;
-  border: 5px solid white;
-  border-radius: 10px;
-  float: left;
-}
-
-.col{
-  padding: 20px;
-}
-
-.row{
-  margin: 30px 10px 30px 10px;
-}
-
-#about p, #exp p{
-  max-width: 500px;
-  text-align: justify;
-  margin: 0 auto;
-  font-family: Raleway;
-}
-
-#about h2, #exp h2{
-  text-align: center;
-  font-family: STIX Two Text; 
-  font-weight: bold;
-  padding: 10px;
-}
-
-#about, #exp{
-  padding: 10% 0;
-}
-
-#socials{
-  background: #b1f8f299;
-  border-bottom-right-radius:10px;
-  border-bottom-left-radius:10px;
-  height: 20%;
-}
-#mainPanel ul {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: center;
-}
-
-#mainPanel li {
+  bottom: -15px;
   display: inline;
   padding: 0px 20px 0px 20px;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.li-nav a:hover{
+  color: #E68325;
+}
+
+.li-nav a{
+  color:#F1E37E;
+  text-decoration: none;
+}
+
+#dayOfTheWeek{
+  display: none;
 }
 
 #open{
-  position: absolute; /*making it absolute so it would be hidden when sidebar is open*/
-  left: 10px;
-  top: 20px;
-  
-
-  background-color: #E68325;
-  color: white;
-  border: none;
-  border-radius: 3px;
+  display: none;
 }
 
-#close{
-  position: relative; 
-  left: 185px;
-  top: -70px;
+@media only screen and (max-width: 780px) {
+  #lined-nav {
+    display: none;
+  }
 
-  font-family: serif;
-  background-color: #E68325;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  font-size: 20px;
+  #dayOfTheWeek{
+    display: block;
+    color:#F1E37E;
+    position: relative;
+    bottom: -17px;
+    
+    font-size: 20px;
+    font-family: serif;
+
+    z-index: -1;
+  }
+
+  #open{
+    display: block;
+    
+    position: absolute;
+    top: 15px;
+    left: 10px;
+
+    font-size: 20px;
+    font-family: serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+
+  #close:hover, #open:hover{
+     color: #E68325;
+  }
+
+  #close{
+    display: inline;
+  }
+
+  #pic{
+    display: none;
+  }
+
+  #abt{
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 #sidebar{
+  display: block;
   width: 0px;
   height: 100%;
-  z-index: 1; /*This makes the sidebar always on top of the layer. This will hide the open sidebar button since the button is currently has an 'absolute position'*/
+  z-index: 5; /*This makes the sidebar always on top of the layer. This will hide the open sidebar button since the button is currently has an 'absolute position'*/
   overflow-x: hidden; /*hides the button since "its overflowing from the sidebar". The current length of sidebar is 0px*/
   position: fixed; /*fixed position. Won't move when user scrolls. fixed based on entire html element*/
   background-color: #FDD9CC;
@@ -189,30 +140,752 @@ body{
 #sidebar a{
   color:black;
   text-decoration: none;
+}  
+
+#close{
+  position: relative; 
+  left: 250px;
+  top: -70px;
+
+  font-family: serif;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
 }
 
-#wall{
+#abt{
+  margin: 50px 0px 20px 0px;
+  user-select: none;
+}
+
+#abt hr{
+  position: relative;
+}
+
+#aboutTxt{
+  margin: 40px 0px 0px 0px;
+}
+
+#abt h2{
+  position: relative;
+  text-align: center;
+  font-family: Miltonian Tattoo;
+  font-size: 72px;
+}
+
+#abt p{
+  position: relative;
+  max-width: 650px;
+  text-align: justify;
+  margin: 0 auto;
+  font-family: Raleway;
+  font-size: 20px;
+}
+
+#abtMe{
+  margin: 100px 0px 0px 0px;
+}
+
+#pfp{
+  height: 650px;
+  border: 5px solid white;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+#swimTxt{
+  background-image: url("https://scontent-lga3-1.xx.fbcdn.net/v/t1.18169-9/1979524_10201315277757440_631645639_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=fGmGJclEoj8AX-ZH8yE&_nc_ht=scontent-lga3-1.xx&oh=a30e4ed9f2c673724cd8d3a6ed216f70&oe=61421D90");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  color: white;
+  border: 5px solid white;
+  margin-bottom: 50px;
+}
+
+#interests{
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c8d2ae9-b4c4-41d0-a6ba-0fb04f082d80/d8ersq2-496fa555-0f2a-4261-9b25-1d213f6674a3.png/v1/fill/w_1600,h_1010,q_80,strp/anime_characters_wallpaper_by_pingoo246_d8ersq2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAxMCIsInBhdGgiOiJcL2ZcLzJjOGQyYWU5LWI0YzQtNDFkMC1hNmJhLTBmYjA0ZjA4MmQ4MFwvZDhlcnNxMi00OTZmYTU1NS0wZjJhLTQyNjEtOWIyNS0xZDIxM2Y2Njc0YTMucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ._SZxQyDupWD1T7MTTyFWtdo0YrhnMH-uO1h60MNcFbI");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  color: white;
+  border: 5px solid white;
+  margin-bottom: 50px;
+}
+
+#swimTxt::before, #interests::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background-color: #B1F8F2;
+}
+
+#socials{
+  list-style-type: none;
+  text-align: center;
+  filter: grayscale(100%);
+}
+
+#socials li{
+  padding: 20px 10px 20px 0px;
+  display: inline;
+}
+
+#socials img{
+  border-radius: 10px;
+}
+
+#medias .col{
+  height: 1000px;
+  border: 2px solid white;
+}
+
+#medias .col h1{
+  position: relative;
+  top: 450px;
+  text-align: center;
+  font-family: Nosifer Caps;
+  font-size: 75px;
+}
+
+#game{
+  cursor: pointer;
+  background-image: url(images/game.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:purple;
+  -webkit-text-stroke: 2px aqua;
+  user-select: none; 
+  transition: all 0.5s;
+}
+
+#anime{
+  cursor: pointer;
+  background-image: url(images/anime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: blue;
+  -webkit-text-stroke: 2px pink; 
+  user-select: none; 
+  transition: all 0.5s;
+}
+
+#manga{
+  cursor: pointer;
+  background-image: url(images/manga.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  -webkit-text-stroke: 2px white;
+  user-select: none; 
+  transition: all 0.5s;
+}
+
+#anime:hover, #manga:hover, #game:hover{
+  filter: brightness(75%);
+}
+
+#bar {
+  background-color: #6243DE;
+  width: 100%; 
+  border-bottom: 2px solid gray;
+}
+
+#other{
+  list-style-type: none;
+  text-align: center;
+}
+
+#other li{
+  position: relative;
+  top: 7px;
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+  font-family: serif;
+}
+
+#other a{
+  text-decoration: none;
+  color:#F5AEF0;
+}
+
+#other a:hover{
+  color: #E68325;
+}
+
+#games .col{
+  height: 500px;
+  border: 2px solid white;
+  user-select: none;
+}
+
+#games .col h1{
+  position: relative;
+  
+  font-family: Alfa Slab One;
+  font-size: 75px;
+  color: white;
+}
+
+#games .col p{
+  position: relative;
+  left: 5px;
+  font-family: Roboto;
+  color: white;
+  max-width: 750px;
+}
+
+#games a{
+  position: relative;
+  bottom: 0px;
+  left: 5px;
+  font-size: 20px;
+  color:#E68325;
+  text-decoration: none;
+  font-family: serif;
+}
+
+#games a:hover{
+  color: white;
+}
+
+#omori{
+  background-image: url("https://www.destructoid.com/wp-content/uploads/2021/05/621192-actual-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#omori::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#generals{
+  background-image: url("https://i.ytimg.com/vi/TBARzJcJpVw/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#generals::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#patapon{
+  background-image: url("https://i.pinimg.com/originals/5a/5d/26/5a5d26886108352ac7e7aa34c2f6b557.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#patapon::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#brawlhalla{
+  background-image: url("https://i.pcmag.com/imagery/reviews/04fhaHJPAA8UD5XukwnMFy7-1..1599071510.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#brawlhalla::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#terraria{
+  background-image: url("https://news.xbox.com/en-us/wp-content/uploads/sites/2/2020/04/Castle-IMG.jpg?w=820");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#terraria::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#spirit{
+  background-image: url("https://cdn.vox-cdn.com/thumbor/OMEF6MbHH7PvizPNQU6RtKz9FLY=/0x0:3840x2160/1400x933/filters:focal(1563x881:2177x1495):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/67221040/Spiritfarer_Launch_Trailer_SCREENSHOTS_04__1_.0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#spirit::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#osu{
+  background-image: url("https://www.taminggaming.com/cms/graphics/screen_shot_3459.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#osu::before{
+  left:0px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#gameReco{
+  background-image: url("https://wallpaperforu.com/wp-content/uploads/2020/06/gaming-wallpaper-20060120531924-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  height: 350px;
+  width: 100%;
+}
+
+#gameReco h1{
+  text-align: center; 
+  color: purple;
+  -webkit-text-stroke: 2px aqua;
+  font-family: Alfa Slab One;
+  font-size: 100px;
+  position: relative;
+  top: 20%;
+}
+
+#aniReco{
+  background-image: url("https://i.pinimg.com/originals/cc/92/78/cc9278edc853b417705745d397d792eb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  height: 350px;
+  width: 100%;
+}
+
+#aniReco h1{
+  text-align: center; 
+  color: blue;
+  -webkit-text-stroke: 2px pink;
+  font-family: Alfa Slab One;
+  font-size: 100px;
+  position: relative;
+  top: 20%;
+}
+
+#manReco{
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/034/682/981/large/nakka-srivastav-1.jpg?1612935074");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  height: 350px;
+  width: 100%;
+}
+
+#manReco h1{
+  text-align: center; 
+  color: black;
+  -webkit-text-stroke: 2px white;
+  font-family: Alfa Slab One;
+  font-size: 100px;
+  position: relative;
+  top: 20%;
+}
+
+#genres{
+  list-style-type: none;
+  position: absolute;
+  top: 223px;
+  z-index: 10;
+}
+
+#genres li a:hover{
+  color:#E68325;
+}
+
+#genres li a{
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+  font-family: serif;
+}
+
+#genres li ul{
+  list-style-type: none;
+  background-color: #6243DE;
+  width: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#genres li ul li{
+  list-style-type: none;
+  display: none;
+}
+
+#genres li:hover ul li{
+  display: block;
+  margin-left: -30px;
+  margin-top: 9px;
+}
+
+#genres li:hover ul{
+  padding-top: 0px;
+  margin-top: 7px;
+  border: 2px solid white;
+}
+
+.gen{
+  font-family: Merienda;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.recs{
+  border-top: 2px solid black;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  user-select: none;
+}
+
+.recs a{
+  position: relative;
+  font-family: serif;
+  top: -75px;
+  font-size: 20px;
+  float:right;
+  text-decoration: none;
+}
+
+.recs a:hover{
+  color: #E68325;
+}
+
+.media-image{
+  margin: 10px 0px 10px 0px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.media-title{
+  font-family: Alfa Slab One;
+  color:white;
+  text-align: center;
+  height: 100%;
+  padding-top: 75px;
+
+  background-color: rgba(0,0,0,0.5);
+}
+
+#aniAct1{
+  background-image: url("https://wallpaperaccess.com/full/1335808.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniAct2{
+  background-image: url("https://media.comicbook.com/2020/07/great-pretender-netflix-1229936-1280x0.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniAct3{
+  background-image: url("https://lostinanime.com/wp-content/uploads/2017/10/KIno-no-Tabi-02-22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniSol1{
+  background-image: url("https://i1.wp.com/www.cyten.co.uk/wp-content/uploads/2020/02/violet_evergarden-main.jpg?fit=1280%2C720");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniSol2{
+  background-image: url("https://thechuunicorner.files.wordpress.com/2017/01/pwctrt0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniSol3{
+  background-image: url("https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQuzcZIeA0wGr8zJ8KZphclZ28OJ-wHC14Q6VkO76zXz9ysXaMkUK-fwwqt3GEaPkHu9KSr8751BHIXNHJMTTQoxcfk4.jpg?r=a65");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniRom1{
+  background-image: url("https://resize.cdn.otakumode.com/ex/1200.680/u/d7fe9edbe4d645309b40efbeb7ab06f1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniRom2{
+  background-image: url("https://www.gridsaratoga.com/wp-content/uploads/2021/05/Fruits-Basket-Season-2-.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniRom3{
+  background-image: url("https://miro.medium.com/max/1400/0*QEzg7uJGKO65dMkA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniSuper1{
+  background-image: url("https://www.tvovermind.com/wp-content/uploads/2018/12/bakemonogatari.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniSuper2{
+  background-image: url("https://nefariousreviews.files.wordpress.com/2019/06/mushishi-featured.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniSuper3{
+  background-image: url("https://occ-0-1068-1723.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABX3NUB51slZKMvu-Pw09E3h3MaDgaPLAy0HBcxgV0OINgoE1UiTF6qDnWAALbN5c0DKOE77B59br5tm-jbU9BV2Xa0OC.jpg?r=e97");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniCom1{
+  background-image: url("https://media.comicbook.com/2020/08/gintama-the-final-movie-trailer-1232874-1280x0.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniCom2{
+  background-image: url("https://thecinemaholic.com/wp-content/uploads/2018/12/grand.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#aniCom3{
+  background-image: url("https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaxxmBnLmknaqVKJmYJbXDaPdh7e93cju0ZcC1Mbh532eY-oVQDQBlnlMNFFUEph4piCaj8qjscl5Jmf_jbKEPNgx6xs.jpg?r=369");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manAct1{
+  background-image: url("https://i.ytimg.com/vi/LfycqIs4YtU/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manAct2{
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5d1b781512a123000197d1f6/1589635489463-7GC66S8RPPIP22EIYUV7/kingdom%2Bcover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manAct3{
+  background-image: url("https://animanhaven.files.wordpress.com/2021/07/t5xrjupfmcy41.png?w=1024");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manRom1{
+  background-image: url("https://i.pinimg.com/originals/50/34/04/5034043a8ed0ef91ba39af43c2d20f52.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manRom2{
+  background-image: url("https://ruggiablog.files.wordpress.com/2017/04/ojojojo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manRom3{
+  background-image: url("https://i.pinimg.com/originals/66/47/40/664740c24b5147bc142b3b8023ca1f78.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manCom1{
+  background-image: url("https://toxicmuffin.files.wordpress.com/2020/03/2020-04-01-00_45_01-kage-no-jitsuryokusha-ni-naritakute-chapter-10.2-page-1.jpg?w=640");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manCom2{
+  background-image: url("https://pbs.twimg.com/media/D-mCLUqXYAAs8CU.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#manCom3{
+  background-image: url("https://static.wixstatic.com/media/b237bc_74c8ae00e35544f59053603637cdb6b0~mv2.png/v1/fit/w_742%2Ch_407%2Cal_c/file.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#cont{
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+
+label, input{
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: serif;
+}
+
+#slideshow{
+  width:100%;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 1s;
+  position: relative;
+  top: 470px;
+  z-index: 1;
+}
+
+#slide-images-1, #slide-images-2, #slide-images-3{
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  transition: 1s;
+}
+
+#slide-images-1:hover #first{
   height: 500px;
 }
 
-#background-travel{
-  width:100%;
-  height:500px;
+#slide-images-2:hover #second{
+  height: 500px;
 }
 
-#title-travel{
+#slide-images-3:hover #third{
+  height: 500px;
+}
+
+#slideshow h1{
   position: relative;
-  left: 50%;
-  top:-350px;
-  transform: translate(-50%, -50%);
-  font-size: 600%;
-  font-family: Brush Script MT;
-  color:rgb(141, 119, 221);
+  top: 50px;
+  color:white;
+  transition: 1s;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Miltonian Tattoo;
 }
 
+#slideshow p{
+  position: relative;
+  top: 75px;
+  color:white;
+  transition: 1s;
+  max-width: 500px;
+  text-align: justify;
+  margin: 0 auto;
+  font-family: Raleway;
+}
 
+#slideshow .col{
+  border: 2px solid aqua;
+}
 
-
-
-
-
+#first, #second, #third{
+  width:100%;
+  height: 0px;
+  position: absolute;
+  top:0px;
+  left:0px;
+  transition: 1s;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
