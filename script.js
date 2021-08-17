@@ -157,7 +157,7 @@ function next2(c){
     document.getElementById("one2").style.backgroundColor="white";
     document.getElementById("two2").style.backgroundColor="gray";
     document.getElementById("three2").style.backgroundColor="white";
-  }else if(count1 == 2){
+  }else if(count2 == 2){
     document.getElementById("slide-images-3").style.backgroundImage = "url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/67838658_10215350598578346_5233775347937312768_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=D9Gpg6OB-o8AX9WjYyZ&_nc_ht=scontent-lga3-1.xx&oh=110bca943465dd9382b3933e6709759c&oe=6141FEF1)";
     document.getElementById("one2").style.backgroundColor="white";
     document.getElementById("two2").style.backgroundColor="white";
