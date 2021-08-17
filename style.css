@@ -817,6 +817,7 @@ label, input{
 
 #slideshow{
   width:100%;
+  user-select: none;
 }
 
 .dot{
