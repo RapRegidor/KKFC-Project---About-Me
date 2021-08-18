@@ -79,14 +79,6 @@ nav{
     color: white;
   }
 
-  #close:hover, #open:hover{
-     color: #E68325;
-  }
-
-  #close{
-    display: inline;
-  }
-
   #pic{
     display: none;
   }
@@ -142,10 +134,16 @@ nav{
   text-decoration: none;
 }  
 
+#close:hover, #open:hover{
+  color: #E68325;
+}
+
 #close{
   position: relative; 
   left: 250px;
   top: -70px;
+
+  display: inline;
 
   font-family: serif;
   background-color: transparent;
