@@ -1,16 +1,16 @@
 header{
   text-align: center;
   padding: 10px 0px 10px 0px; 
-  background-image: linear-gradient(white, #6243DE);
+  background-image: linear-gradient(white, lightblue);
   margin-top: 0px;
 }
 
 nav{
   position: sticky;
   top: 0px;
-  background-color:  #6243DE;
+  background-color:  lightblue;
   height: 60px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid black;
 
   z-index: 1;
 
@@ -36,7 +36,7 @@ nav{
 }
 
 .li-nav a{
-  color:#F1E37E;
+  color:black;
   text-decoration: none;
 }
 
@@ -55,10 +55,10 @@ nav{
 
   #dayOfTheWeek{
     display: block;
-    color:#F1E37E;
+    color:black;
     position: relative;
     bottom: -17px;
-    
+
     font-size: 20px;
     font-family: serif;
 
@@ -67,7 +67,7 @@ nav{
 
   #open{
     display: block;
-    
+
     position: absolute;
     top: 15px;
     left: 10px;
@@ -76,7 +76,15 @@ nav{
     font-family: serif;
     background-color: transparent;
     border: none;
-    color: white;
+    color: black;
+  }
+
+  #close:hover, #open:hover{
+     color: #E68325;
+  }
+
+  #close{
+    display: inline;
   }
 
   #pic{
@@ -95,18 +103,19 @@ nav{
   z-index: 5; /*This makes the sidebar always on top of the layer. This will hide the open sidebar button since the button is currently has an 'absolute position'*/
   overflow-x: hidden; /*hides the button since "its overflowing from the sidebar". The current length of sidebar is 0px*/
   position: fixed; /*fixed position. Won't move when user scrolls. fixed based on entire html element*/
-  background-color: #FDD9CC;
+  background-color: #B1F8F2;
   white-space: nowrap;
+  border-right: 1px solid black;
 }
 
 #name-sidebar{
-  background-color: #9AC4F8;
+  background-color: lightblue;
   color: black;
   font-family: serif;
   font-size: 30px;
   padding: 13px;
   cursor: default;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid black;
 }
 
 
@@ -126,7 +135,7 @@ nav{
 #sidebar a:hover{
   padding: 10px 40px 10px 0px;
   color: lightblue;
-  
+
 }
 
 #sidebar a{
@@ -134,20 +143,14 @@ nav{
   text-decoration: none;
 }  
 
-#close:hover, #open:hover{
-  color: #E68325;
-}
-
 #close{
   position: relative; 
   left: 250px;
   top: -70px;
 
-  display: inline;
-
   font-family: serif;
   background-color: transparent;
-  color: white;
+  color: black;
   border: none;
   border-radius: 3px;
   font-size: 20px;
@@ -333,7 +336,7 @@ body{
 
 #games .col h1{
   position: relative;
-  
+
   font-family: Alfa Slab One;
   font-size: 75px;
   color: white;
