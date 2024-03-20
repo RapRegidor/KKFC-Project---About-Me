@@ -1,16 +1,16 @@
 header{
   text-align: center;
   padding: 10px 0px 10px 0px; 
-  background-image: linear-gradient(white, lightblue);
+  background-image: linear-gradient(#FFFFFF, #ADD8E6);
   margin-top: 0px;
 }
 
 nav{
   position: sticky;
   top: 0px;
-  background-color:  lightblue;
+  background-color:  #ADD8E6;
   height: 60px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 
   z-index: 1;
 
@@ -109,13 +109,13 @@ nav{
 }
 
 #name-sidebar{
-  background-color: lightblue;
+  background-color: #ADD8E6;
   color: black;
   font-family: serif;
   font-size: 30px;
   padding: 13px;
   cursor: default;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 
@@ -134,7 +134,7 @@ nav{
 
 #sidebar a:hover{
   padding: 10px 40px 10px 0px;
-  color: lightblue;
+  color: #ADD8E6;
 
 }
 
