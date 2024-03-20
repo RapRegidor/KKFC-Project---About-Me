@@ -491,7 +491,7 @@ body{
 }
 
 #gameReco{
-  background-image: url("https://wallpaperforu.com/wp-content/uploads/2020/06/gaming-wallpaper-20060120531924-scaled.jpg");
+  background-image: url("images/game.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 30%;
@@ -529,7 +529,7 @@ body{
 }
 
 #manReco{
-  background-image: url("https://cdnb.artstation.com/p/assets/images/images/034/682/981/large/nakka-srivastav-1.jpg?1612935074");
+  background-image: url("images/manreco.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 30%;
